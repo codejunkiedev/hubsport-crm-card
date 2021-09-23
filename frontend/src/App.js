@@ -17,6 +17,7 @@ function App() {
   const HUBSPOT_CALLBACK_URL = 'https://hubspotcrm-653b7.web.app/callback'
 
   useEffect(() => {
+    console.log('I ma asdas');
     const hubspotURL = `https://app.hubspot.com/oauth/authorize?client_id=${HUBSPOT_CLIENT_ID}&redirect_uri=${HUBSPOT_CALLBACK_URL}&scope=crm.objects.contacts.read%20crm.objects.contacts.write`;
     setHubspotAuthURL(hubspotURL);
   }, []);
