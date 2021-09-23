@@ -24,9 +24,9 @@ function App() {
   const onHubspotCode = async (code, params) => {
     console.log("Hubspot code", code);
     const accessToken = await getHubspotAccessToken(code);
-    const tempContacts = await getHubSpotContacts();
-    console.log('Contacts are ', tempContacts);
-    setContacts(tempContacts.contacts);
+    // const tempContacts = await getHubSpotContacts();
+    // console.log('Contacts are ', tempContacts);
+    // setContacts(tempContacts.contacts);
   }
 
   const onClosePopup = () => {
